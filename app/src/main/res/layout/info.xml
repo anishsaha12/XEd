@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/info1"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:paddingBottom="0dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:paddingTop="40dp">
+
+        <TextView
+            android:id="@+id/tvContent"
+            android:layout_width="match_parent"
+            android:layout_height="405dp"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif"
+            android:text="TextView"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#ede8e9" />
+
+    </ScrollView>
+
+
+    <ImageView
+        android:id="@+id/ivAvatar"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginLeft="115dp"
+        android:layout_marginTop="60dp"
+        android:layout_weight="1"
+        android:elevation="5dp"
+        app:srcCompat="@drawable/avataaars1" />
+</LinearLayout>

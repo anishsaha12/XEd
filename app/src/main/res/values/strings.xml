@@ -1,0 +1,84 @@
+<resources>
+    <string name="app_name">X Ed</string>
+
+    <string name="createAccount">
+        How to open a bank Account:\n\n
+Select your type of account. There are usually 2 types of accounts:\n
+A. A Savings Account\n
+B. A current Account\n\n
+A savings Account basically helps you gain intrest on the money you store in the bank,
+        But you would require a minimum amount in the abnk at all times.
+A current account is based for daily uses and has no lower limit and neither does it provide an Intrest.\n\n\n
+
+Wanna know more?\n\n
+
+Scroll Down...\n\n\n
+
+Next you have to provide your personal details along with relevant proof.\n
+The proofs required include an ID proof and an Address proof.\n\n
+Of recently banks require your aadhar number also to make the process smoother.\n
+You will also need to supply them with a photograph and fill up a form for the application.\n\n
+If you are a minor then you would need your parents to sign off and be the custodians till you become 18 years.\n\n
+You then put in your initial balance into the account by either giving a draft or cash.\n
+You then wait for a couple of business days till you recieve your cheque book and accompanying kit.\n\n\n
+
+Thats all for bank account creation.\n
+    </string>
+
+    <string name="deposit">
+Methods of Depositing:\n\n
+ a. Cash: You can give cash to the teller and fill up a deposit
+    form available at the counter to deposit money through cash.\n
+ b. Demand Draft or Cashiers Cheque: You can Deposit cash that
+    is verified by a teller by providing a DD.\n
+ c. Online transfer: One can transfer using online portal from
+    another account provided you have the account number, NEFT
+    or IFSC codes.\n
+ d. Cheques: You can deposit a cheque with you account number
+    and contact details written at the back and get the money
+    deposited in 3-4 business days.\n
+    </string>
+
+    <string name="withdraw">
+Withdrawing cash:\n\n
+ a. Cash: Again you can use the ATM with your debit card to get
+    the cash. Or fill up a form at your bank branch and request
+    the teller to provide you with the cash.\n
+ b. Demand Draft: Provide the details of whom the money is
+    supposed to be given to and the reason the teller then
+    generates an official note that can then be deposited by the
+    other party directly into his account.\n
+ c. Cheque: Draw up a cheque in favour of your reciepient or a
+    self addressed cheque and give it to the other person.\n
+    </string>
+
+    <string name="invOpportunities">
+Investment Opportunities:\n\n\n
+A customer of the bank can invest in any of the following options:\n\n
+ a. Fixed Deposits: These are deposits into a bank that can be
+    frozen in for a period of time and they accumulate interest
+    over this period.\n
+ b. Bonds: These are government sponsored guarantees that so much
+    amount will be payed with a particular amount of intrest.\n
+ c. Stock Options: Buying a share in a particular company and
+    investing based on the profits or losses of that company and
+    its performance in the market.\n
+    </string>
+
+    <string name="doDont">
+Do\'s of banking:\n\n
+ a. Read your statements\n
+ b. Keep record of all transactions\n
+ c. Make sure you have enough money before a purchase\n
+ d. Keep all bank related documents safe and secure.\n
+ e. Be nice to customer service.\n
+ f. Protect your personal information\n\n\n
+Dont\'s of banking:\n\n
+ a. Ask for statements to be stopped.\n
+ b. Bluff and threatent customer service\n
+ c. Depend on ATM's for balance\n
+ d. Throw away reciepts\n
+ e. Keeps using debit card even after wrong PIN.\n
+ f. Gives Away account details to anyone.\n
+    </string>
+</resources>
