@@ -2,6 +2,7 @@ package com.rising.dots.xed;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.speech.tts.TextToSpeech;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.KeyEvent;
@@ -10,6 +11,7 @@ import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import java.util.Locale;
 import java.util.Random;
 
 /**
@@ -17,6 +19,8 @@ import java.util.Random;
  */
 
 public class Info extends AppCompatActivity {
+
+    TextToSpeech t1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,13 +31,22 @@ public class Info extends AppCompatActivity {
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
+        t1=new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() {
+            @Override
+            public void onInit(int status) {
+                if(status != TextToSpeech.ERROR) {
+                    t1.setLanguage(Locale.UK);
+                }
+            }
+        });
+
         Bundle extras = getIntent().getExtras();
         int type=0;
         if(extras != null) {
             type= extras.getInt("action");
         }
 
-        TextView tvContent = (TextView) findViewById(R.id.tvContent);
+        final TextView tvContent = (TextView) findViewById(R.id.tvContent);
 
         switch (type){
             case 1:
@@ -67,11 +80,19 @@ public class Info extends AppCompatActivity {
                 int random = getRandomNumber(min,max);
                 int id = getResources().getIdentifier("com.rising.dots.xed:drawable/avataaars" + random, null, null);
                 ava.setImageResource(id);
+                t1.speak(tvContent.getText().toString(), TextToSpeech.QUEUE_FLUSH, null);
             }
         });
 
     }
 
+    public void onPause(){
+        if(t1 !=null){
+            t1.stop();
+            t1.shutdown();
+        }
+        super.onPause();
+    }
     private int getRandomNumber(int min,int max) {
         return (new Random()).nextInt((max - min) + 1) + min;
     }

@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
             if (event2.getX() > event1.getX())
             {
                //Left to right
-                Intent myIntent = new Intent(MainActivity.this, FinanceNews.class);
+                Intent myIntent = new Intent(MainActivity.this, TipsScrollingActivity.class);
                 startActivity(myIntent);
                 overridePendingTransition(R.anim.left_in, R.anim.right_out);
             }
@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
     public void newAct (View view){
-        Intent myIntent = new Intent(MainActivity.this, PersonalFinance.class);
+        Intent myIntent = new Intent(MainActivity.this, Main3Activity.class);
         startActivity(myIntent);
         overridePendingTransition(R.anim.bottom_in,R.anim.top_out);
     }
